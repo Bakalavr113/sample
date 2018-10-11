@@ -1,0 +1,4 @@
+Hello, <%= @user.firstname  +  @user.lastname %>
+<%= link_to "Edit profile",edit_user_path %> <br />
+<%= link_to "Delete", @user,  method: :delete, 
+							data: { confirm: "You sure?" }%> <br />
